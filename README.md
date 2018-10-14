@@ -40,6 +40,7 @@ Documentation
 
 Installation (Ubuntu 16.04)
 ---------------------------
+```
 sudo apt install \
     build-essential \
     cmake \
@@ -66,6 +67,7 @@ cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/opt/dionaea ..
 make
 sudo make install
+```
 
 Licenses
 --------
