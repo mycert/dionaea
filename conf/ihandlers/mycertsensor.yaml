@@ -1,0 +1,10 @@
+- name: mycertsensor
+  config:
+    # Submission Server URL
+    connection_url: "http://localhost:8080/1.0/sensor/{id}/connection"
+    # Artifact Server URL
+    artifact_url: "http://localhost:8080/1.0/sensor/{id}/connection/{connection_id}/artifact"
+    # Sensor ID
+    sensorid: "CHANGEME"
+    # File Field Name
+    file_fieldname: "upfile"
