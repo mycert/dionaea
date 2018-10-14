@@ -108,6 +108,16 @@ class handler(ihandler):
         })
         i.report()
 
+    def handle_incident_dionaea_modules_python_pptp_connect(self, icd):
+        logger.info("MyCERT Sensor: handle_incident_dionaea_modules_python_pptp_connect")
+        self.submitArtifact(str(self.connection[icd.con]), 'pptp_connect', json.dumps({
+            'firmware_revision': icd.firmware_revision,
+            'protocol_version': icd.protocol_version,
+            'remote_hostname': icd.remote_hostname,
+            'vendor_name': icd.vendor_name,
+            'timestamp': str(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+        }))
+
     def handle_incident_dionaea_modules_python_mqtt_subscriber(self, icd):
         logger.info("MyCERT Sensor: handle_incident_dionaea_modules_python_mqtt_subscriber")
         self.submitArtifact(str(self.connection[icd.con]), 'mqtt_subscriber', json.dumps({
