@@ -140,6 +140,7 @@ install_available_python_config(
         submit_http.yaml
         tftp_download.yaml
         virustotal.yaml.in
+        mycertsensor.yaml
 )
 
 install_enabled_python_config(
@@ -149,9 +150,9 @@ install_enabled_python_config(
         cmdshell.yaml
         emuprofile.yaml
         ftp.yaml
-        log_sqlite.yaml
         store.yaml
         tftp_download.yaml
+        mycertsensor.yaml
 )
 
 ##### IHandler
