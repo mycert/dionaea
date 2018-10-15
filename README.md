@@ -62,6 +62,10 @@ sudo apt install \
     python3-bson \
     python3-yaml \
     fonts-liberation
+
+git clone https://github.com/cikgufatah/dionaea
+cd dionaea
+
 mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/opt/dionaea ..
