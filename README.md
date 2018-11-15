@@ -62,6 +62,7 @@ sudo apt install \
     python3-bson \
     python3-yaml \
     fonts-liberation
+(Notes: universe repository must be enabled)
 
 git clone https://github.com/cikgufatah/dionaea
 cd dionaea
