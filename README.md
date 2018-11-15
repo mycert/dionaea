@@ -72,6 +72,9 @@ cd build
 cmake -DCMAKE_INSTALL_PREFIX:PATH=/opt/dionaea ..
 make
 sudo make install
+
+(To execute dionaea)
+/opt/dionaea/bin/dionaea -c /opt/dionaea/etc/dionaea/dionaea.cfg
 ```
 
 Licenses
